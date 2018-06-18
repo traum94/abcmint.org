@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<script type="text/javascript"> 
+		function show(){ 
+		var divLink=document.getElementById("divLink"); 
+		divLink.style.visibility='visible'; 
+		var divLisence=document.getElementById("divLisence"); 
+		if(divLisence.style.visibility=='visible') divLisence.style.visibility='hidden'; 
+		} 
+	</script> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ABCMint Foundation</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/buttons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/mission.css" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    <div class="container cover-container">
+        <div class="masthead clearfix">
+            <div class="inner">
+				<h4 class="masthead-brand" >ABCMint Foundation</h4>
+                <nav class="nav nav-masthead">
+                <a class="nav-link" href="index.html">Home</a>
+				<a class="nav-link active" href="#">Download</a>
+                </nav>
+            </div>
+        </div>
+		<div class="row main-row">
+			<div class="col">
+                <div class="paragraphs">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;ABCMintCore is a community-driven free software project, released under GPL V3 license. </p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;To test, verify and develop quantum-resistant blockchain technology, the ABCMint foundation is delegated as an administrator for the ABCMintCore software. </p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;By running this software, you participate in creating Advanced Binary Currency. </p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;Please carefully read the two documents below before downloading. By clicking the "Agree" button below, you agree to follow the terms and conditions in these two documents: </p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;(1) <a href="license/ABC Mint Third Party Disclosures.docx"><u>THIRD PARTY SOFTWARE DISCLOSURE, ATTRIBUTIONS, COPYRIGHT NOTICES, AND LICENSES</u></a></p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;(2) <a href="license/DRAFT Terms of Use.docx"><u>TERMS OF USE</u></a></p>
+                </div>
+            </div>
+        </div>
+
+
+		<div id="divLisence" style="visibility:visible;">Click agree to show download link</div> 
+		<input type="button" onclick="show();" value="Agree" /> 
+		<div id="divLink" style="visibility:hidden;">
+			<div class="downloadbox core-column-left clearfix">
+				<div class="corecard windows-card">
+				  <div>
+					<a href="bin/abcmint-qt-win64.rar" class="dl download-link" id="win64exe">Windows 64 bit</a>
+				  </div>
+				  <div>
+					<a href="bin/abcmint-qt-win32.rar" class="dl download-link" id="win32exe">Windows 32 bit</a>
+				  </div>
+				  <div>
+				    <a href="bin/Abcmint-Qt-mac.zip" class="dl download-link" id="macdmg">Mac OS X</a>
+				  </div>
+
+			</div>
+		</div> 
+    </div>
+	
+	
+	<div class="container cover-container">
+		<div class="row main-row">
+			<div class="col">
+				<div class="paragraphs">
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;The software manual can be found at <a href="https://github.com/abcmint/abcmint/wiki">https://github.com/abcmint/abcmint/wiki</a></p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;The source code is available on github: <a href="https://github.com/abcmint/abcmint">https://github.com/abcmint/abcmint</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
